@@ -1,0 +1,9 @@
+C:\Users\matdo\Documents\Visual Studio 2015\Projects\RTiVo_Windows\RTiVo_Windows\bin\Debug\RTiVo_Windows.exe.config
+C:\Users\matdo\Documents\Visual Studio 2015\Projects\RTiVo_Windows\RTiVo_Windows\bin\Debug\RTiVo_Windows.exe
+C:\Users\matdo\Documents\Visual Studio 2015\Projects\RTiVo_Windows\RTiVo_Windows\bin\Debug\RTiVo_Windows.pdb
+C:\Users\matdo\Documents\Visual Studio 2015\Projects\RTiVo_Windows\RTiVo_Windows\obj\Debug\RTiVo_Windows.csprojResolveAssemblyReference.cache
+C:\Users\matdo\Documents\Visual Studio 2015\Projects\RTiVo_Windows\RTiVo_Windows\obj\Debug\RTiVo_Windows.MainWindow.resources
+C:\Users\matdo\Documents\Visual Studio 2015\Projects\RTiVo_Windows\RTiVo_Windows\obj\Debug\RTiVo_Windows.Properties.Resources.resources
+C:\Users\matdo\Documents\Visual Studio 2015\Projects\RTiVo_Windows\RTiVo_Windows\obj\Debug\RTiVo_Windows.csproj.GenerateResource.Cache
+C:\Users\matdo\Documents\Visual Studio 2015\Projects\RTiVo_Windows\RTiVo_Windows\obj\Debug\RTiVo_Windows.exe
+C:\Users\matdo\Documents\Visual Studio 2015\Projects\RTiVo_Windows\RTiVo_Windows\obj\Debug\RTiVo_Windows.pdb
