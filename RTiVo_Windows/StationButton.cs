@@ -15,17 +15,26 @@ namespace RTiVo_Windows
         private int frequency;
         public StationButton(int freq)
         : base()
-    {
+        {
             this.selected = false;
             this.BackColor = unselectedColor;
             this.Click += this.clickHandler;
             this.frequency = freq;
+            
         }
 
         protected void clickHandler(object sender, EventArgs e)
         {
-            selectAndTune();
-            
+            if (this.frequency != -1)
+            {
+                selectAndTune();
+            }
+            else
+            {
+                CustomStation popUp = new CustomStation();
+                //popUp.Location = Cursor.Position;
+                popUp.Show();
+            }            
         }
        
         public void selectAndTune()

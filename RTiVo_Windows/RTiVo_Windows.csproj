@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomStation.Designer.cs">
+      <DependentUpon>CustomStation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Station.cs" />
     <Compile Include="StationButton.cs">
       <SubType>Component</SubType>
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomStation.resx">
+      <DependentUpon>CustomStation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>

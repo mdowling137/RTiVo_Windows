@@ -18,6 +18,7 @@ namespace RTiVo_Windows
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             MainWindow mainWindow = new MainWindow();
+            //mainWindow.Location = new System.Drawing.Point(MainWindow.mainWindowX, MainWindow.mainWindowY);
             mainWindow.addButtons(testList);
             Application.Run(mainWindow);
             

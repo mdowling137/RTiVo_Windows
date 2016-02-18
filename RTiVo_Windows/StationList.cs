@@ -8,7 +8,7 @@ namespace RTiVo_Windows
 {
     public class StationList
     {
-        public int[] fakedStations = {10110, 10270, 10310, 10570,10710,10250,8850,10690,10350,11111,12111}; //this needs to be created in the constructor by querying the radio board
+        public int[] fakedStations = {10110, 10270, 10310, 10570,10710,10250,8850,10690,10350,11111}; //this needs to be created in the constructor by querying the radio board
         private List<Station> availableStations;
         public StationList()
         {

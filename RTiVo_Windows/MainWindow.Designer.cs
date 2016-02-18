@@ -41,14 +41,15 @@ namespace RTiVo_Windows
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(608, 519);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(986, 1006);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 519);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(986, 1006);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "MainWindow";
             this.Text = "RTiVo";
@@ -80,8 +81,25 @@ namespace RTiVo_Windows
                     button.selectAndTune();
                 }
             }
+            var buttonAdd = new StationButton(-1);
+            buttonAdd.Text = "+";
+            buttonAdd.Width = buttonSize;
+            buttonAdd.Height = buttonAdd.Width;
+            buttonAdd.Margin = new System.Windows.Forms.Padding(buttonBorder, buttonBorder, buttonBorder, buttonBorder);
 
-            this.Width = (5 * (buttonSize + 4*buttonBorder));
+            flowLayoutPanel1.Controls.Add(buttonAdd);
+            availableButtons.Add(buttonAdd);
+            int rowOffset = 39;
+            int colOffset = 17;
+            int elementsPerRow = 5;
+            int numRows = (sList.Count + 1)/ elementsPerRow;
+            if((sList.Count+1)%elementsPerRow != 0)
+            {
+                numRows++;
+            }
+            int elementSize = (buttonSize + 2 * buttonBorder);
+            this.Height = elementSize * numRows+ rowOffset;
+            this.Width = elementSize * elementsPerRow + colOffset;
         }
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
