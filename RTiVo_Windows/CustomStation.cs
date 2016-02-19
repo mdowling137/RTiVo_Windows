@@ -12,9 +12,11 @@ namespace RTiVo_Windows
 {
     public partial class CustomStation : Form
     {
-        public CustomStation()
+        public CustomStation(Control Parent)
         {
             InitializeComponent();
+            this.Location = new Point(Parent.Location.X + 100, Parent.Location.Y + 100);
+            
         }
     }
 }

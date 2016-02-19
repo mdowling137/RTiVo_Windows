@@ -31,7 +31,7 @@ namespace RTiVo_Windows
             }
             else
             {
-                CustomStation popUp = new CustomStation();
+                CustomStation popUp = new CustomStation(this.Parent);
                 //popUp.Location = Cursor.Position;
                 popUp.Show();
             }            
